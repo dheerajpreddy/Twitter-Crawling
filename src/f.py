@@ -1,7 +1,14 @@
 """Answer to sixth question."""
 
-import pickle
+import pandas as pd
 
-file = open('../data/iiit_hyderabad.p', 'rb')
-tweets = pickle.load(file)
-print type(tweets[0])
+df = pd.read_csv('../data/iiscbangalore_tweets.csv')
+df2 = df.nlargest(10, 'retweet_count')
+# tweets = df2.to_string(columns='text')
+RTCountList = df2["retweet_count"].tolist()
+tweetList = df2["text"].tolist()
+
+for i in range(0, 10):
+    print "Number of reetweets: ", RTCountList[i]
+    print tweetList[i]
+    print '\n'

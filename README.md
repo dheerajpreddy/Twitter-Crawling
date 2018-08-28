@@ -36,6 +36,8 @@ Please find the packages used in the `requirements.txt` file.
 
 ### Question f
 1. [Get user's all tweets](https://gist.github.com/yanofsky/5436496)
+2. [Loading CSV into pandas](https://chrisalbon.com/python/data_wrangling/pandas_dataframe_importing_csv/)
+3. [Find N largest values using pandas](https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.nlargest.html)
 
 ### Bonus
 1. [JS hack to get all tweets of a user](https://stackoverflow.com/questions/8471489/find-all-tweets-from-a-user-not-just-the-first-3-200)
