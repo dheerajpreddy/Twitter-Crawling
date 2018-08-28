@@ -25,6 +25,8 @@ The goal of this project is just to experiment with how Twitter crawlers on Pyth
 
 ### Question d
 1. [Plotting graphs using matplotlib](https://matplotlib.org/users/pyplot_tutorial.html)
+2. [Plotting pie charts](https://pythonspot.com/matplotlib-pie-chart/)
+3. [Plotting venn diagrams](https://stackoverflow.com/questions/19841535/python-matplotlib-venn-diagram)
 
 ### Question e
 1. [Basic data analysis](https://medium.freecodecamp.org/basic-data-analysis-on-twitter-with-python-251c2a85062e)
