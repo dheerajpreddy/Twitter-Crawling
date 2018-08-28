@@ -1,15 +1,14 @@
 """Answer to the third question."""
 
-# Import all tokens
-from tokens import *
+import json
 import time
 from datetime import datetime
 import matplotlib.pyplot as plt
 import collections
 
-queries = ['@iiit_hyderabad', '@iiscbangalore']
-data = twitter.search(q=queries[1],result_type='mixed',count = 100)
-# x = json.dumps(data)
+with open('../data/iisc_data.json') as f:
+    data = json.load(f)
+
 statuses = data['statuses']
 dates = {}
 
@@ -30,7 +29,8 @@ od = collections.OrderedDict(sorted(dates.items()))
 for k, v in od.iteritems():
     x.append(k)
     y.append(v)
-# xAxis = dates.keys()
-# yAxis = dates.values()
+plt.figure(figsize=(10, 5))
 plt.plot(x, y)
-plt.savefig('dates' + '.png')
+plt.xlabel('Date')
+plt.ylabel('Number of Tweets')
+plt.savefig('../outputs/' + 'output_c_IISC' + '.png')

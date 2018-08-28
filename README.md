@@ -4,10 +4,15 @@ The goal of this project is just to experiment with how Twitter crawlers on Pyth
 
 ## Resources used:-
 
+### General collecting/storing data
+1. [Getting full length tweets](https://github.com/tweepy/tweepy/issues/974)
+2. [Writing to a JSON file](https://stackoverflow.com/questions/12309269/how-do-i-write-json-data-to-a-file)
+
 ### Question a
 1. [Code shared in class](class.py)
 2. [Find k most frequent words in  a string](https://www.geeksforgeeks.org/find-k-frequent-words-data-set-python/)
 3. [Plotting graphs using matplotlib](https://matplotlib.org/users/pyplot_tutorial.html)
+4. [Removing stop words from string](https://www.geeksforgeeks.org/removing-stop-words-nltk-python/)
 
 ### Question b
 1. [Forming a WordCloud after removing stop words](https://www.geeksforgeeks.org/generating-word-cloud-python/)
