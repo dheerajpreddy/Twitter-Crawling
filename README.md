@@ -31,7 +31,7 @@ Please find the packages used in the `requirements.txt` file.
 3. [Plotting venn diagrams](https://stackoverflow.com/questions/19841535/python-matplotlib-venn-diagram)
 
 ### Question e
-1. [Basic data analysis](https://medium.freecodecamp.org/basic-data-analysis-on-twitter-with-python-251c2a85062e)
+1. [Sentiment analysis using TextBlob](https://medium.freecodecamp.org/basic-data-analysis-on-twitter-with-python-251c2a85062e)
 2. [Simple sentiment analysis script](http://blog.aylien.com/build-a-sentiment-analysis-tool-for-twitter-with-this-simple-python-script/)
 
 ### Question f

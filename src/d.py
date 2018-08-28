@@ -2,7 +2,6 @@
 
 import json
 import matplotlib.pyplot as plt
-from matplotlib_venn import venn3, venn3_circles
 
 with open('../data/iisc_data.json') as f:
     data = json.load(f)
