@@ -5,7 +5,7 @@ The goal of this project is just to experiment with how Twitter crawlers on Pyth
 ## Resources used:-
 
 ### Question a
-1. [Code shared in class]('./class.py')
+1. [Code shared in class](class.py)
 2. [Find k most frequent words in  a string](https://www.geeksforgeeks.org/find-k-frequent-words-data-set-python/)
 3. [Plotting graphs using matplotlib](https://matplotlib.org/users/pyplot_tutorial.html)
 
