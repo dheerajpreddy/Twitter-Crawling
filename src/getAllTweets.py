@@ -11,7 +11,7 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
-screen_name = "iiit_hyderabad"
+screen_name = "iiscbangalore"
 tweets = []
 new_tweets = api.user_timeline(screen_name = screen_name, count=200)
 tweets.extend(new_tweets)
@@ -22,4 +22,8 @@ while len(new_tweets) > 0:
 	tweets.extend(new_tweets)
 	oldest = tweets[-1].id - 1
 
-pickle.dump(tweets, open("../data/" + screen_name + ".p", "wb" ))
+outtweets = [[tweet.id_str, tweet.created_at, tweet.retweet_count, tweet.text.encode("utf-8")] for tweet in tweets]
+with open('../data/' + '%s_tweets.csv' % screen_name, 'wb') as f:
+	writer = csv.writer(f)
+	writer.writerow(["id","created_at", "retweet_count","text"])
+	writer.writerows(outtweets)
