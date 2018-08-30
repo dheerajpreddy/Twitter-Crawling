@@ -93,7 +93,7 @@ Output files:
 All the tweets of a user (up to 3200) are collected using the `getAllTweets.py` script. Using this data, the tweets with the most amount of retweets are taken as the most popular. The tweets are printed and stored on to the txt files linked above. \
 
 ## Bonus Question
-To complete this task, Selenium along with BeautifulSoup was used to scrape data. A Google Chrome window is opened in the background with a Twitter user's profile link. After that, a JS code is executed on the browser to keep scrolling towards the bottom of the page. The height of the page is checked in a while loop. The moment height no longer changes for 10 seconds, it is assumed that the bottom of the page is reached - and hence the first ever tweet of a user. The ID of the tweet is then extracted using bs4 and a new window is opened showing the first ever tweet of a handle.
+To complete this task, Selenium along with BeautifulSoup was used to scrape data. A Google Chrome window is opened in the background with a Twitter user's profile link. After that, a JS code is executed on the browser to keep scrolling towards the bottom of the page. The height of the page is checked in a while loop. The moment height no longer changes for 10 seconds, it is assumed that the bottom of the page is reached - and hence the first ever tweet of a user. The ID of the tweet is then extracted using bs4 and the content of the tweet is printed onto the console.
 
-For example, the first ever tweet of `@ponguru` is shown as the following by the script I've written - \
-![](outputs/bonus.png){width=75%}
+For example, the first ever tweet of `@iiscbangalore` is shown as the following by the script I've written - \
+![](outputs/bonus2.png)
