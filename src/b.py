@@ -14,12 +14,12 @@ with open('../data/iisc_data.json') as f:
 statuses = data['statuses']
 concat_str = "";
 for post in statuses:
-    concat_str = concat_str + " " + post['full_text']
+    concat_str = concat_str + " " + post['full_text'] # concatenate all tweets into one string
 
 wordcloud = WordCloud(width = 800, height = 800,
             background_color ='white',
             stopwords = stop_words,
-            min_font_size = 10).generate(concat_str)
+            min_font_size = 10).generate(concat_str) # Form the wordcloud, remove stopwords as well
 plt.figure(figsize = (8, 8), facecolor = None)
 plt.imshow(wordcloud)
 plt.axis("off")

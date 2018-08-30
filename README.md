@@ -7,7 +7,7 @@ Please find the packages used in the `requirements.txt` file.
 ## Usage
 To run any code, `cd` into the `/src` directory and run
 ```python
-python3 name_of_script.py 
+python3 name_of_script.py
 ```
 ## Resources used:-
 
@@ -16,7 +16,7 @@ python3 name_of_script.py
 2. [Writing to a JSON file](https://stackoverflow.com/questions/12309269/how-do-i-write-json-data-to-a-file)
 
 ### Question a
-1. [Code shared in class](class.py)
+1. [Code shared in class](src/class_code.py)
 2. [Find k most frequent words in  a string](https://www.geeksforgeeks.org/find-k-frequent-words-data-set-python/)
 3. [Plotting graphs using matplotlib](https://matplotlib.org/users/pyplot_tutorial.html)
 4. [Removing stop words from string](https://www.geeksforgeeks.org/removing-stop-words-nltk-python/)

@@ -13,19 +13,19 @@ statuses = data['statuses']
 dates = {}
 
 for post in statuses:
-    dateData = time.strptime(post['created_at'],'%a %b %d %H:%M:%S +0000 %Y')
-    dateData = datetime.fromtimestamp(time.mktime(dateData))
+    dateData = time.strptime(post['created_at'],'%a %b %d %H:%M:%S +0000 %Y') # get time
+    dateData = datetime.fromtimestamp(time.mktime(dateData)) # convert to datetime
     # date = datetime.strptime(dateData, '%b %d %Y %I:%M%p')
-    date = dateData.replace(hour=0, minute=0, second=0, microsecond=0)
+    date = dateData.replace(hour=0, minute=0, second=0, microsecond=0) # keep onnly date
     # x.append(date)
     if date.strftime("%Y-%m-%d") in dates:
-        dates[date.strftime("%Y-%m-%d")] = dates[date.strftime("%Y-%m-%d")] + 1
+        dates[date.strftime("%Y-%m-%d")] = dates[date.strftime("%Y-%m-%d")] + 1 # increment value in dict
     else:
-        dates[date.strftime("%Y-%m-%d")] = 1
+        dates[date.strftime("%Y-%m-%d")] = 1 # initialize value in dict
 
 x = []
 y = []
-od = collections.OrderedDict(sorted(dates.items()))
+od = collections.OrderedDict(sorted(dates.items())) # Sort dates in order
 for k, v in od.iteritems():
     x.append(k)
     y.append(v)
