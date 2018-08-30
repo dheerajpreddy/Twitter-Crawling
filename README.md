@@ -4,6 +4,11 @@ The goal of this project is just to experiment with how Twitter crawlers on Pyth
 
 Please find the packages used in the `requirements.txt` file.
 
+## Usage
+To run any code, `cd` into the `/src` directory and run
+```python
+python3 name_of_script.py 
+```
 ## Resources used:-
 
 ### General collecting/storing data
