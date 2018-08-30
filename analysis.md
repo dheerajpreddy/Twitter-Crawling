@@ -46,7 +46,7 @@ From the histogram above, yet again a lot of the tweets include "RT" implying th
 
 ## Question b
 The same data set collected for the first question is used for this one as well. The tweets are concatenated once again, and using the WordCloud library, the stop words are removed from the concatenated string, and the Word Cloud is then generated for both data sets. \ Output for IIIT-H:- \
-![Word Cloud for IIIT-H](outputs/output_b_IIIT.png "Word Cloud for IIIT-H"){#id .class width=100% text-align=center} \
+![Word Cloud for IIIT-H](outputs/output_b_IIIT.png "Word Cloud for IIIT-H"){#id .class width=100%} \
 Output for IISc:- \
 ![Word Cloud for IISc](outputs/output_b_IISC.png "Word Cloud for IISc"){#id .class width=100%}\
 The observations are similar to that of the first question.
@@ -72,15 +72,28 @@ On 2018-08-21, ISRO tweeted out that IISc Bangalore Chairman would give a speech
 
 
 ## Question d
-![](outputs/output_d_IISC.png)
-![](outputs/output_d_IIIT.png)
+IISc:- \
+![](outputs/output_d_IISC.png){width=75%} \
+IIIT:- \
+![](outputs/output_d_IIIT.png){width=75%}
 
 ## Question e
-![](outputs/output_e_IISC.png)\
-![](outputs/output_e_IIIT.png)\
+IISc:- \
+![](outputs/output_e_IISC.png){width=75%} \
+IIIT:- \
+![](outputs/output_e_IIIT.png){width=75%}
+\
+\
+\
+\
 
 ## Question f
-[txt1](outputs/output_f_iisc.txt)\
-[txt2](outputs/output_f_iiit.txt)\
+Output files:
+[txt1](outputs/output_f_iisc.txt), [txt2](outputs/output_f_iiit.txt)\
+All the tweets of a user (up to 3200) are collected using the `getAllTweets.py` script. Using this data, the tweets with the most amount of retweets are taken as the most popular. The tweets are printed and stored on to the txt files linked above. \
 
 ## Bonus Question
+To complete this task, Selenium along with BeautifulSoup was used to scrape data. A Google Chrome window is opened in the background with a Twitter user's profile link. After that, a JS code is executed on the browser to keep scrolling towards the bottom of the page. The height of the page is checked in a while loop. The moment height no longer changes for 10 seconds, it is assumed that the bottom of the page is reached - and hence the first ever tweet of a user. The ID of the tweet is then extracted using bs4 and a new window is opened showing the first ever tweet of a handle.
+
+For example, the first ever tweet of `@ponguru` is shown as the following by the script I've written - \
+![](outputs/bonus.png){width=75%}
