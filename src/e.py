@@ -3,19 +3,20 @@
 from time import sleep
 from datetime import datetime
 from textblob import TextBlob
-import json
+import json, csv
 import matplotlib.pyplot as plt
 
-with open('../data/iisc_data.json') as f:
-    data = json.load(f)
-
+f = open( '../data/research_iiscbangalore_tweets.csv', 'rU' )
+reader = csv.DictReader( f, fieldnames = ( "null", "id","created_at","retweet_count","text" ))
+data = json.dumps( [ row for row in reader ] )
+tweets = json.loads(data)
 keyword = 'research'
 polarity_list = []
 numbers_list = []
 number = 1
 
-for tweet in data['statuses']:
-    analysis = TextBlob(tweet['full_text'])
+for i in range(1, len(tweets)):
+    analysis = TextBlob(tweets[i]['text'])
     analysis = analysis.sentiment
     polarity = analysis.polarity
     polarity_list.append(polarity)

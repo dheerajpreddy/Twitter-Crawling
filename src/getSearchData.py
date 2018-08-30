@@ -9,7 +9,7 @@ OAUTH_TOKEN = "717220472623071233-oeDgXLyYdqT92Mi06aaAGV7EtSExfKS" # Access toke
 OAUTH_TOKEN_SECRET = "tVh6WAqVqJ5Pekb3skPON4OD46dyyBAIGOiWjPkZrtglC" #Access token secret
 twitter = Twython(APP_KEY,APP_SECRET,OAUTH_TOKEN,OAUTH_TOKEN_SECRET)
 
-data = twitter.search(q='@iiscbangalore',result_type='mixed',tweet_mode='extended', count = 200)
+data = twitter.search(q='@iiit_hyderabad',result_type='mixed',tweet_mode='extended', count = 200)
 
-with open('../data/iisc_data.json', 'w') as outfile:
+with open('../data/iiit_data.json', 'w') as outfile:
     json.dump(data, outfile)
